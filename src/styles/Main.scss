@@ -1,0 +1,50 @@
+// put some sparkle in the logo for the status page when busy
+.ferret-logo {
+  &--busy {
+    animation: crawl 4s 0.1s infinite linear alternate;
+  }
+}
+
+@keyframes crawl {
+  0% { stroke-dasharray: 95px 1px; }
+  20% { stroke-dasharray: 90px 6px; stroke-dashoffset: 96px; }
+  80% { stroke-dasharray: 90px 6px; stroke-dashoffset: 0; }
+  100% { stroke-dasharray: 95px 1px; }
+}
+
+.title {
+
+  .ferret-logo {
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    .ferret-logo {
+      transform: translateX(2px);
+    }
+  }
+}
+
+// Replace default
+.grommetux-value__annotated {
+  flex-direction: column;
+}
+
+#game-wrapper {
+}
+
+.danger {
+  color: #dc2878;
+  font-weight: 700;
+}
+.highlight {
+  background-color: #00cceb;
+  color: #fff;
+  font-weight: 700;
+}
+
+#game-input {
+  height: 60px;
+  font-size: 26px;
+  margin: 40px;
+}

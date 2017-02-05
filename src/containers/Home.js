@@ -76,7 +76,7 @@ class Home extends Component {
               <Menu direction='row'
                 size='small'
                 dropAlign={{"right": "right"}}>
-                <Anchor href='#'>
+                <Anchor href='https://github.com/bin4ryio'>
                   GitHub
                 </Anchor>
               </Menu>
